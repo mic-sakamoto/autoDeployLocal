@@ -1,0 +1,143 @@
+.radio-container{
+	grid-template-columns: 1fr 1fr !important;
+}
+
+.notification-area {
+	min-width: 300px;
+}
+
+.load-more-btn {
+	border: none;
+	width: 100%;
+	background: transparent;
+	color: #014099;
+}
+.load-more-btn:hover {
+	color: #014099;
+}
+
+.container-btn-area {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1.875rem;
+}
+
+.header-div {
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+}
+
+.button-item {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+}
+
+.header-div,
+.announcement-item {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.announcement-header {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.announcement-title {
+	flex: 1;
+	margin-left: 10px;
+}
+
+.announcement-content {
+	display: none;
+	padding: 10px 0;
+	margin-left: 15%;
+	margin-right: 5%;
+}
+
+.openDate {
+	width: 100px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.body-content {
+	width: 460px;
+}
+
+.ellipsis-text {
+ 	display: -webkit-box;
+ 	-webkit-box-orient: vertical;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	-webkit-line-clamp: 1; /* 表示する行数を指定（例：2行） */
+ 	width: 100%;
+ 	box-sizing: border-box;
+}
+
+
+
+@media (max-width: 1400px) {
+	#top_div {
+		width: 100%;
+		margin: auto;
+	}
+
+	#menu_div {
+		width: 100%;
+		height: 400px;
+		color: white;
+		background-color: black;
+		display: flex;
+		padding: 5 10 5 10;
+	}
+
+	.sub-menu-title {
+		padding-left: 20px;
+		line-height: 30px;
+		cursor: pointer;
+	}
+
+	.menu-block,
+	.menu-block-m {
+		height: 167px;
+		padding: 10px;
+	}
+}
+
+@media (min-width: 769px){
+	.notification-container {
+		display: flex;
+		gap: 1rem;
+		justify-content: space-between;
+	}
+	
+	.announcement-div {
+		height: 100%;
+		min-width: 68%;
+		box-sizing: border-box;
+	}
+	
+	.container-btn-area-1{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+	}
+
+	.container-btn-area-2{
+		grid-template-columns: 1fr 1fr 1fr 1fr !important;
+	}
+}
+
+@media (max-width: 768px) {
+    .body-content {
+        width: 100%; /* スマホ画面で幅を親要素に合わせる */
+		padding-left: 5px;
+    }
+	
+	.container-btn-area{
+		grid-template-columns: 1fr 1fr 1fr !important;
+	}
+}
+

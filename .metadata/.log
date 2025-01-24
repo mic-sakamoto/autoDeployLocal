@@ -1,0 +1,1259 @@
+!SESSION 2024-10-23 09:02:50.191 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ant.ui 4 0 2024-10-23 09:02:53.511
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ant.ui [87]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.16.500.v20240621-0244"; singleton:="true"
+       org.eclipse.jdt.junit [246]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.13.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+              org.eclipse.jdt.debug.ui [244]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                     org.eclipse.jdt.ui [252]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                            org.eclipse.jdt.core.manipulation [242]
+                              Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.30.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.15.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.9.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.buildship.ui 4 0 2024-10-23 09:02:53.515
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.buildship.ui [91]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.eclemma.ui 4 0 2024-10-23 09:02:54.817
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.eclemma.ui [154]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.apt.ui 4 0 2024-10-23 09:02:55.993
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.apt.ui [237]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.14.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.bcoview 4 0 2024-10-23 09:02:55.996
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.bcoview [238]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.core.manipulation 4 0 2024-10-23 09:02:55.999
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.core.manipulation [242]
+  Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.debug.ui 4 0 2024-10-23 09:02:56.002
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.debug.ui [244]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.junit 4 0 2024-10-23 09:02:56.006
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.junit [246]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.13.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+       org.eclipse.jdt.debug.ui [244]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.ui [252]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                     org.eclipse.jdt.core.manipulation [242]
+                       Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="1.19.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.30.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-10-23 09:02:56.009
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jdt.ui [252]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.core.manipulation [242]
+         Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.apt.ui 4 0 2024-10-23 09:02:56.013
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.apt.ui [281]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.jdt.ui 4 0 2024-10-23 09:02:56.050
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.jdt.ui [294]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.launching 4 0 2024-10-23 09:02:56.055
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.launching [295]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+       org.eclipse.jdt.debug.ui [244]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.ui [252]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                     org.eclipse.jdt.core.manipulation [242]
+                       Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.m2e.refactoring 4 0 2024-10-23 09:02:56.060
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.refactoring [302]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation
+    -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.ide.ant 4 0 2024-10-23 09:02:56.069
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.ide.ant [335]
+  Unresolved requirement: Require-Bundle: org.eclipse.ant.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.ant.ui; bundle-version="3.9.500.v20240721-1149"; singleton:="true"
+       org.eclipse.ant.ui [87]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="[3.5.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.16.500.v20240621-0244"; singleton:="true"
+              org.eclipse.jdt.junit [246]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.13.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+                     org.eclipse.jdt.debug.ui [244]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                            org.eclipse.jdt.ui [252]
+                              Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                                   org.eclipse.jdt.core.manipulation [242]
+                                     Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.30.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.15.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.9.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.java.tasks 4 0 2024-10-23 09:02:56.074
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.tasks [337]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.16.500.v20240621-0244"; singleton:="true"
+       org.eclipse.jdt.junit [246]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.13.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+              org.eclipse.jdt.debug.ui [244]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                     org.eclipse.jdt.ui [252]
+                       Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                            org.eclipse.jdt.core.manipulation [242]
+                              Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.30.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.mylyn.java.ui 4 0 2024-10-23 09:02:56.076
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.java.ui [338]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+       org.eclipse.jdt.ui [252]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.15.200,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+              org.eclipse.jdt.core.manipulation [242]
+                Unresolved requirement: Require-Bundle: org.commonmark; bundle-version="0.22.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.junit; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.junit; bundle-version="3.16.500.v20240621-0244"; singleton:="true"
+       org.eclipse.jdt.junit [246]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="[3.13.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+              org.eclipse.jdt.debug.ui [244]
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.29.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.jdt.core.manipulation; bundle-version="[1.16.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.jdt.core.manipulation; bundle-version="1.21.250.v20240911-2224_BETA_JAVA23"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.30.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt.ui; bundle-version="3.33.50.v20240911-2224_BETA_JAVA23"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.debug.ui; bundle-version="0.0.0"
+    -> Bundle-SymbolicName: org.eclipse.jdt.debug.ui; bundle-version="3.13.500.v20240822-0459"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:493)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:2074)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:143)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2065)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:2005)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1968)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1884)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+!ENTRY org.eclipse.ui 2 0 2024-10-23 09:03:55.353
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-23 09:03:55.353
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-10-23 09:03:55.859
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-10-23 09:03:55.859
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.core.resources 4 567 2024-10-23 09:03:56.601
+!MESSAGE ワークスペースは復元されましたが、問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-10-23 09:03:56.602
+!MESSAGE '.org.eclipse.egit.core.cmp' のメタデータを読み取れませんでした。
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/.org.eclipse.egit.core.cmp)[567]: java.lang.Exception: '.org.eclipse.egit.core.cmp' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2618)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2319)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.ide.IDE.registerAdapters(IDE.java:1752)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.initialize(IDEWorkbenchAdvisor.java:205)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:171)
+	at org.eclipse.ui.internal.Workbench$18.runWithException(Workbench.java:1724)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4855)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:93)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1720)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2825)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:632)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-10-23 09:03:56.606
+!MESSAGE '.org.eclipse.egit.core.cmp' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+!STACK 0
+java.lang.Exception: '.org.eclipse.egit.core.cmp' のプロジェクト記述ファイル (.project) がありません。 このファイルには、プロジェクトに関する重要な情報が含まれています。 このファイルが復元されるまで、プロジェクトは正しく機能しません。
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:970)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2618)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2319)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:833)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:825)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:775)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1057)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:387)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:639)
+	at org.eclipse.osgi.container.Module.start(Module.java:498)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:516)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.ide.IDE.registerAdapters(IDE.java:1752)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.initialize(IDEWorkbenchAdvisor.java:205)
+	at org.eclipse.ui.application.WorkbenchAdvisor.internalBasicInitialize(WorkbenchAdvisor.java:171)
+	at org.eclipse.ui.internal.Workbench$18.runWithException(Workbench.java:1724)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4855)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:93)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1720)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2825)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:632)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY ch.qos.logback.classic 2 0 2024-10-23 09:03:57.244
+!MESSAGE Exception while setting up logging:D:\workspace\git\uss-ss-al-web\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+!STACK 0
+java.nio.file.FileAlreadyExistsException: D:\workspace\git\uss-ss-al-web\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227)
+	at java.base/java.nio.file.Files.copy(Files.java:3140)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:82)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 2 0 2024-10-23 09:03:57.247
+!MESSAGE Exception while setting up logging:D:\workspace\git\uss-ss-al-web\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+!STACK 0
+java.nio.file.FileAlreadyExistsException: D:\workspace\git\uss-ss-al-web\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:87)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:234)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:482)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:227)
+	at java.base/java.nio.file.Files.copy(Files.java:3140)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:82)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.278
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.lambda$addElementSelectorAndActionAssociations$0(JoranConfigurator.java:54)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.getApplicableAction(SaxEventInterpreter.java:222)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:136)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.281
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.lambda$addElementSelectorAndActionAssociations$0(JoranConfigurator.java:54)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.getApplicableAction(SaxEventInterpreter.java:222)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:136)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.284
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.lambda$addElementSelectorAndActionAssociations$0(JoranConfigurator.java:54)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.getApplicableAction(SaxEventInterpreter.java:222)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:136)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.287
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.action.ConfigurationAction.buildCurrentModel(ConfigurationAction.java:32)
+	at ch.qos.logback.core.joran.action.BaseModelAction.begin(BaseModelAction.java:39)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.callBeginAction(SaxEventInterpreter.java:240)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:139)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.291
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.action.ConfigurationAction.buildCurrentModel(ConfigurationAction.java:32)
+	at ch.qos.logback.core.joran.action.BaseModelAction.begin(BaseModelAction.java:39)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.callBeginAction(SaxEventInterpreter.java:240)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:139)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.294
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.action.ConfigurationAction.buildCurrentModel(ConfigurationAction.java:32)
+	at ch.qos.logback.core.joran.action.BaseModelAction.begin(BaseModelAction.java:39)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.callBeginAction(SaxEventInterpreter.java:240)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:139)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.297
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.action.ConfigurationAction.buildCurrentModel(ConfigurationAction.java:32)
+	at ch.qos.logback.core.joran.action.BaseModelAction.begin(BaseModelAction.java:39)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.callBeginAction(SaxEventInterpreter.java:240)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:139)
+	at ch.qos.logback.core.joran.spi.SaxEventInterpreter.startElement(SaxEventInterpreter.java:120)
+	at ch.qos.logback.core.joran.spi.EventPlayer.play(EventPlayer.java:52)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.playSaxEvents(GenericXMLConfigurator.java:207)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelFromSaxEventList(GenericXMLConfigurator.java:201)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:172)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.297
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.sanityCheck(JoranConfigurator.java:80)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:177)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.297
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.sanityCheck(JoranConfigurator.java:80)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:177)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.305
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.sanityCheck(JoranConfigurator.java:80)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:177)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.310
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.sanityCheck(JoranConfigurator.java:80)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:177)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.313
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.318
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.321
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.322
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.createTuplesList(LogbackClassicDefaultNestedComponentRules.java:62)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.<clinit>(LogbackClassicDefaultNestedComponentRules.java:44)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.327
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.createTuplesList(LogbackClassicDefaultNestedComponentRules.java:62)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.<clinit>(LogbackClassicDefaultNestedComponentRules.java:44)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.329
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.createTuplesList(LogbackClassicDefaultNestedComponentRules.java:62)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.<clinit>(LogbackClassicDefaultNestedComponentRules.java:44)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.331
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.createTuplesList(LogbackClassicDefaultNestedComponentRules.java:62)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.<clinit>(LogbackClassicDefaultNestedComponentRules.java:44)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.334
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.addDefaultNestedComponentRegistryRules(LogbackClassicDefaultNestedComponentRules.java:53)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.337
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.addDefaultNestedComponentRegistryRules(LogbackClassicDefaultNestedComponentRules.java:53)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.339
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.addDefaultNestedComponentRegistryRules(LogbackClassicDefaultNestedComponentRules.java:53)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY ch.qos.logback.classic 4 0 2024-10-23 09:03:57.342
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.IllegalStateException: Invalid class loader from a refreshed bundle is being used: ch.qos.logback.classic_1.5.7
+	at org.eclipse.osgi.internal.loader.BundleLoader.getProviderLoader(BundleLoader.java:1057)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findRequiredSource(BundleLoader.java:1300)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:510)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.model.processor.LogbackClassicDefaultNestedComponentRules.addDefaultNestedComponentRegistryRules(LogbackClassicDefaultNestedComponentRules.java:53)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addDefaultNestedComponentRegistryRules(JoranConfigurator.java:85)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.buildModelInterpretationContext(GenericXMLConfigurator.java:156)
+	at ch.qos.logback.core.joran.JoranConfiguratorBase.buildModelInterpretationContext(JoranConfiguratorBase.java:122)
+	at ch.qos.logback.classic.joran.JoranConfigurator.buildModelInterpretationContext(JoranConfigurator.java:95)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:211)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+
+!ENTRY org.apache.aries.spifly.dynamic.bundle 4 0 2024-10-23 09:03:57.344
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "java.lang.ClassLoader.getResourceAsStream(String)" because "this.loader" is null
+	at org.apache.aries.spifly.dynamic.OSGiFriendlyClassWriter.getCommonSuperClass(OSGiFriendlyClassWriter.java:82)
+	at org.objectweb.asm.SymbolTable.addMergedType(SymbolTable.java:1264)
+	at org.objectweb.asm.Frame.merge(Frame.java:1311)
+	at org.objectweb.asm.Frame.merge(Frame.java:1224)
+	at org.objectweb.asm.MethodWriter.computeAllFrames(MethodWriter.java:1612)
+	at org.objectweb.asm.MethodWriter.visitMaxs(MethodWriter.java:1548)
+	at org.objectweb.asm.MethodVisitor.visitMaxs(MethodVisitor.java:786)
+	at org.objectweb.asm.commons.LocalVariablesSorter.visitMaxs(LocalVariablesSorter.java:147)
+	at org.objectweb.asm.tree.MethodNode.accept(MethodNode.java:767)
+	at org.objectweb.asm.commons.JSRInlinerAdapter.visitEnd(JSRInlinerAdapter.java:159)
+	at org.objectweb.asm.ClassReader.readMethod(ClassReader.java:1516)
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:745)
+	at org.objectweb.asm.ClassReader.accept(ClassReader.java:425)
+	at org.apache.aries.spifly.dynamic.ClientWeavingHook.weave(ClientWeavingHook.java:60)
+	at org.eclipse.osgi.internal.weaving.WovenClassImpl.call(WovenClassImpl.java:188)
+	at org.eclipse.osgi.internal.weaving.WovenClassImpl.call(WovenClassImpl.java:1)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.notifyHookPrivileged(ServiceRegistry.java:1387)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.notifyHooksPrivileged(ServiceRegistry.java:1360)
+	at org.eclipse.osgi.internal.weaving.WovenClassImpl.callHooks(WovenClassImpl.java:250)
+	at org.eclipse.osgi.internal.weaving.WeavingHookConfigurator.processClass(WeavingHookConfigurator.java:82)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.processClass(ClasspathManager.java:794)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:764)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:691)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:657)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:637)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:616)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:520)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at ch.qos.logback.classic.joran.JoranConfigurator.addModelHandlerAssociations(JoranConfigurator.java:102)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.processModel(GenericXMLConfigurator.java:215)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:178)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:123)
+	at ch.qos.logback.core.joran.GenericXMLConfigurator.doConfigure(GenericXMLConfigurator.java:66)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.loadConfiguration(M2ELogbackConfigurator.java:113)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.configureLogback(M2ELogbackConfigurator.java:88)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator.lambda$0(M2ELogbackConfigurator.java:63)
+	at org.eclipse.m2e.logback.configuration.M2ELogbackConfigurator$1.run(M2ELogbackConfigurator.java:136)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)

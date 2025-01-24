@@ -1,0 +1,128 @@
+.accordion-open-body-block .input-searchable {
+	display: flex;
+	width: auto;
+}
+
+.accordion-open-body-block .input-searchable .btn {
+	width: 100px;
+}
+
+.accordion-open-body-block input,
+select {
+	width: 250px;
+}
+
+.accordion-open-body-block .radio-container {
+	display: flex
+}
+
+.accordion-open-body-block .radio-container label {
+	width: 250px;
+}
+
+/*.strength-msg-table {*/
+/*	font-size: 11px;*/
+/*	text-align: left;*/
+/*}*/
+
+
+
+.password-block {
+	width: 250px;
+}
+
+.password-flex-block {
+	display: flex;
+}
+
+.inputpassword {
+	width: 100%;
+}
+
+#makePassword {
+	color: #014099;
+	transition: all .3s;
+	margin-left: 10px;
+}
+
+#makePassword:hover {
+	color: #014099;
+	background-color: lightgray;
+}
+
+.password-strength-item {
+	width: 250px;
+	margin-top: 5px;
+}
+
+
+.half-input {
+	height: 2rem !important;
+}
+
+.list-password .inputpassword {
+	width: 200px;
+	border-radius: 4px 0 0 4px;
+}
+
+.list-password .passwordIcon {
+	padding: 9px;
+}
+
+.list-password .password-save {
+	min-width: 50px;
+	padding: 0 5 0 5;
+}
+
+.list-body-button-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.list-body-button-row .list-password {
+	display: inline-grid;
+}
+
+.list-body-button-row .list-delete {
+	display: inline-grid;
+}
+
+.list-userName {
+	color: var(--staff-color);
+	font-weight: bold;
+}
+.list-userNameTitle {
+	color: var(--staff-color);
+	font-weight: bold;
+}
+
+.staff-id {
+	margin-left: 5px;
+	background-color: var(--staff-light-color);
+	padding: 0 5;
+	color: white;
+	line-height: 17px;
+}
+
+.list-staff-info {
+	flex-direction: column;
+} 
+.list-item-block-row {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+.list-btn {
+	display: flex;
+	gap: 0.5rem;
+	width: 100%;
+	justify-content: flex-end;
+}
+.list-btn-item {
+	font-size: 0.8rem !important;
+	height: 45px;
+	padding: 5px;
+	min-width: 150px;
+}

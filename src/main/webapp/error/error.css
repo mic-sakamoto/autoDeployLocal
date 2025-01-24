@@ -1,0 +1,13 @@
+.error-text {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 200px;
+}
+.button-panel {
+	width: 200px;
+	margin: auto;
+    text-align: center;
+}
+button {
+	width: 100%;
+}

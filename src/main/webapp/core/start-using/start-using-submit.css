@@ -1,0 +1,61 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	background-color: #f4f4f4;
+	flex-direction: column; /* これで、ロゴとloginBoxを縦に並べる */
+}
+
+.textArea h1 {
+	font-size: 30px;
+	color: #000000;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+.textArea p {
+	font-size: 22px;
+	color: #000000;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+.displayBox {
+	background-color: #cacaca;
+	border: 1px solid #ccc;
+	padding: 20px 30px 5px 30px;
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+}
+
+.textArea2 h2 {
+	font-size: 19.5px;
+	color: #000000;
+	line-height: 1.5;
+	font-weight: bold;
+	width: 480px;
+}
+
+.textArea3 {
+	font-size: 19.5px;
+	color: #000000;
+	line-height: 1.5;
+	font-weight: bold;
+	text-decoration: underline;
+	text-decoration-color: rgb(179, 178, 178);
+}
+
+.back {
+	display: block;
+	font-size: 19.5px;
+	margin-top: 5px;
+	color: #000000;
+	text-decoration: underline;
+	text-decoration-color: rgb(189, 189, 189);
+}
+
+.back:hover {
+	color: #007bff;
+}

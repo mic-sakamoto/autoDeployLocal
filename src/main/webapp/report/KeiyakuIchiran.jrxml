@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="842" pageHeight="595" columnWidth="535" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="f6bcdc9d-8f5c-45f5-a2df-b403d99f93b9">
+	<property name="ireport.zoom" value="1.5421731577181266"/>
+	<property name="ireport.x" value="158"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="dataset1" uuid="ae22d6e2-167d-4416-8ccd-b63c2a5fe47a"/>
+	<subDataset name="dataset2" uuid="c98f14fe-2ee8-4eb1-8222-f9df69b87c86"/>
+	<subDataset name="dataset3" uuid="59899439-35fb-48fa-9d47-0da3f0e2af80"/>
+	<parameter name="chohyobi" class="java.lang.String"/>
+	<field name="Print date and time" class="java.lang.String"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="moshikomibi" class="java.lang.String"/>
+	<field name="webuketsukeid" class="java.lang.String"/>
+	<field name="kokyakumei" class="java.lang.String"/>
+	<field name="sutetasu" class="java.lang.String"/>
+	<field name="hommoshikomibi" class="java.lang.String"/>
+	<field name="berikanryobi" class="java.lang.String"/>
+	<field name="tatekaebi" class="java.lang.String"/>
+	<field name="nyuryokuhoho" class="java.lang.String"/>
+	<field name="kameitenid" class="java.lang.String"/>
+	<field name="kameitemmei" class="java.lang.String"/>
+	<field name="tantoshamei" class="java.lang.String"/>
+	<field name="kokyakuid" class="java.lang.String"/>
+	<field name="daiko" class="java.lang.String"/>
+	<field name="koshimbi" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="57" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="0" width="166" height="35" uuid="465efe3c-1f3d-4c36-b814-3d60928ded46"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[契約一覧]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="680" y="0" width="100" height="20" uuid="e5b71a68-aba5-4454-8e9a-bdb5ddee62b3"/>
+				<textElement textAlignment="Right">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{chohyobi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="52" height="16" uuid="7f021253-e80d-4aab-b01c-950985a3854f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[申込日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="195" y="0" width="67" height="16" uuid="b6518606-0ed4-4aaf-969f-95af05b26f57"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[ステータス]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="115" y="0" width="80" height="16" uuid="77402da9-4615-49c4-9a4c-c4eedeb6ef0c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[顧客名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="0" width="63" height="16" uuid="80e7c985-97f6-437d-a7d8-5fe01850bad2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[WEB受付ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="262" y="0" width="59" height="16" uuid="b8bd9820-c662-4386-a1aa-7a6565c0400a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[本申込日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="418" y="0" width="53" height="16" uuid="1b361471-1a84-4290-a23b-279ffbf91557"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[入力方法]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="471" y="0" width="51" height="16" uuid="e00e5adb-4f74-45ec-810a-53b03b3f58a8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[加盟店ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="0" width="48" height="16" uuid="138b574d-020c-4f57-9d66-d12c35bc6580"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[担当者名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="0" width="82" height="16" uuid="0a684bdd-cbb4-4089-bd8a-83ecd7f7537e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[加盟店名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="695" y="0" width="38" height="16" uuid="35c380e7-d6ea-42f3-a6cc-ea34981b72a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[代行]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="0" width="54" height="16" uuid="02b2738e-6148-4b28-9c52-e4335f64e045"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[ベリ完了日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="652" y="0" width="43" height="16" uuid="757941eb-fe4d-4ee9-a867-8dc7ee49af9a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[顧客ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="733" y="0" width="47" height="16" uuid="bcf3a641-4b3b-4d64-b4ec-264fa1c812a9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[更新日]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="375" y="0" width="43" height="16" uuid="75008728-bfcf-411b-b378-10d272661208"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-HW-H"/>
+				</textElement>
+				<text><![CDATA[立替日]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="782" height="1" uuid="0af684d5-38f6-43c5-9ef3-e1b753ce5a7c"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="0" width="52" height="16" uuid="2feb4482-1f56-4832-be01-06d6fc1445e2"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{moshikomibi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="1" width="63" height="15" uuid="0ef7ed2f-3cd7-42a2-bd54-249a88bc23da"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{webuketsukeid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="115" y="0" width="80" height="16" uuid="f63eb93a-b565-4368-bc7f-cae9da43c01a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kokyakumei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="195" y="0" width="67" height="16" uuid="bdcfe5c7-f2b4-43b1-982b-fe91ff00ecba"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sutetasu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="262" y="0" width="59" height="16" uuid="877db934-e526-4ccd-8eb7-b09a3721f218"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hommoshikomibi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="0" width="54" height="16" uuid="9b721f70-cad6-4022-a5fa-a2df247c0c93"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{berikanryobi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="375" y="0" width="43" height="16" uuid="3d5f1fe2-465e-4f29-9821-fac0202857d6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tatekaebi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="0" width="53" height="16" uuid="8005138f-7d70-4b93-86c3-8a60d67e441b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nyuryokuhoho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="471" y="0" width="51" height="16" uuid="71befaae-af1f-405e-88b6-a211205b9634"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kameitenid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="522" y="0" width="82" height="16" uuid="8f69498b-ba2e-4c87-8f8b-8a1c912bc1dc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kameitemmei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="604" y="0" width="48" height="16" uuid="328b5b05-cea1-482a-8540-2cc91a6989ef"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tantoshamei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="733" y="0" width="47" height="16" uuid="6074b994-f1df-4919-9f19-d4837aacff7a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{koshimbi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="652" y="0" width="43" height="16" uuid="22c19341-6e29-4955-be10-51423e019f46"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kokyakuid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="695" y="0" width="38" height="16" uuid="7f3f0f43-65e3-4380-ba9f-de5af276d771"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="游明朝" size="6" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{daiko}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="391" y="2" width="40" height="20" uuid="3f56f0a9-e967-4c9a-95bd-993cf04ce46f"/>
+				<textElement>
+					<font fontName="游明朝" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="2" width="80" height="20" uuid="03ad6980-4a53-4b41-897b-e708b847b32f"/>
+				<textElement textAlignment="Right">
+					<font fontName="游明朝" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+" /"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

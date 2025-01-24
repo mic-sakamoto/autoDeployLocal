@@ -1,0 +1,35 @@
+.list-kameitenName {
+	color: var(--customer-color);
+	font-weight: bold;
+}
+.user-id {
+	margin-left: 5px;
+	background-color:var(--customer-light-color);
+	padding: 0 5;
+	color: white;
+	line-height: 17px;
+}
+
+.list-model{
+	color: var(--color-blue);
+	font-weight: bold;
+}
+
+.list-status {
+    text-align: center;
+    width: 120px;
+    min-width: 100px;
+    display: block;
+    line-height: 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+.contract-id{
+	padding: 0 8px;
+}
+
+.list-card{
+	cursor: pointer;
+}
+

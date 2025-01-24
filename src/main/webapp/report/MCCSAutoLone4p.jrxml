@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MCCSAutoLone4p" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c6328a5-f22d-41f8-821c-f6c4874cd38f">
+	<property name="ireport.zoom" value="1.2396694214876045"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="12"/>
+	<parameter name="MCCSAutoLone4p" class="java.io.InputStream"/>
+	<field name="hommoshikominen" class="java.lang.String"/>
+	<field name="hommoshikomizuki" class="java.lang.String"/>
+	<field name="hommoshikomibi" class="java.lang.String"/>
+	<field name="shomeisain" class="java.lang.String"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="802" uuid="8354f229-a777-4b17-a82b-2547e2464789"/>
+				<box topPadding="0" leftPadding="0"/>
+				<imageExpression><![CDATA[$P{MCCSAutoLone4p}]]></imageExpression>
+			</image>
+			<textField isBlankWhenNull="true">
+				<reportElement x="169" y="261" width="35" height="24" uuid="fc8174db-0bd9-4527-8040-58e9930eba7b"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="游明朝" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hommoshikominen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="234" y="261" width="19" height="24" uuid="3e99b54c-cf91-41d1-ac83-5c80fa895025"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="游明朝" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hommoshikomizuki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="285" y="261" width="23" height="24" uuid="be87740c-4f6a-4a60-b4e9-9aad15d317a7"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="游明朝" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hommoshikomibi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="297" width="179" height="23" uuid="0900b92a-1665-4669-b9c0-1f20e5e5294e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="14" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shomeisain}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

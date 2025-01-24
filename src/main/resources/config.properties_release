@@ -1,0 +1,11 @@
+DEMO-FLG=0
+ALWEB-HASH-KEY=micalweb5159
+OBIC-API-URI=http://uss-ss.obic7.obicnet.ne.jp/APIService/Front/
+OBIC-API-AUTHORIZATION=dXNzc3VwcG9ydHNlcnZpY2VfY3JlZGl0OjJMcWFzQWNpN0s3Nw==
+OBIC-API-FBB-COMPANY-NO=1
+OBIC-API-CONTENT-TYPE=application/json; charset=shift-jis
+OBIC-API-HOST=dev.uss-ss-al.net
+OBIC-API-PATH-HENSAI-YOTEI=HensaiYotei
+OBIC-API-PATH-SHINSA-KEIYAKU-JOKYO=SinsaKeiyakuJoukyou
+OBIC-API-PATH-KEIYAKU-SHOKAI=KeiyakuNaiyouSyoukai
+OBIC-API-PATH-SEISAN-SHOKAI=SeisanDataSyoukai

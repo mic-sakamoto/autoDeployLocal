@@ -1,0 +1,146 @@
+.contents-area-confirm {
+	display: none;
+}
+
+.contents-area-confirm.active {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+/*各確認フォームを囲む要素*/
+.confirm-form {
+	background: var(--color-white);
+	border-radius: 10px 10px 0 0;
+}
+
+/*各入力フォームのヘッダー要素*/
+.confirm-form-header {
+	border-bottom: 2px solid #ced1d1;
+	display: flex;
+	padding: 1rem 1.5rem .875rem;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.confirm-form-header-title {
+	font-size: 1.2rem;
+}
+
+.confirm-form-header-edit-btn {
+	min-width: 7.5rem;
+}
+
+.confirm-form-body {
+	border-top: 1px solid #ced1d1;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem 1.25rem;
+	padding: 1.5rem;
+}
+
+.confirm-list-item {
+	display: grid;
+	gap: 1.25rem;
+	grid-template-columns: 30% 70%;
+}
+
+.confirm-list-item-title {
+	font-weight: bold;
+}
+
+.confirm-list-item-data {
+	display: flex;
+}
+
+/*ファイルアップロード欄*/
+/*アップロード欄*/
+.file-upload {
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+
+.file-upload-item {
+	border: 1px solid #838c8c;
+	border-radius: 5px;
+	display: flex;
+	width: 100%;
+}
+
+.file-upload-input {
+	display: none;
+}
+
+.file-upload-body,
+.file-uploaded-body {
+	align-items: center;
+	column-gap: 6px;
+	display: flex;
+	line-height: normal;
+	padding: .75rem 1rem;
+	width: 100%;
+}
+
+/*サイン欄*/
+.sign-area {
+	position: relative;
+	width: 100%;
+	height: 7rem;
+	background-color: #e1f4f9;
+}
+
+.sign-reset-btn-div {
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+	z-index: 10;
+}
+
+.sign-reset-btn {
+	height: auto;
+}
+
+.modal-btn button {
+	min-width: 6rem;
+}
+
+sign-modal .modal-body {
+	width: 100%;
+	max-width: 880px;
+}
+
+.sign {
+	width: 100%;
+	height: 7rem;
+	max-width: 830px;
+
+}
+
+.sign-area img {
+	width: 100%;
+	height: 100%;
+}
+
+/*サンプル画像*/
+.sample-div {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	gap: .3rem;
+}
+
+.sample-img {
+	width: 100%;
+	height: 100%;
+	background-color: lightgray;
+}
+
+/*数字付きリスト*/
+.numbered-list {
+	list-style-type: decimal;
+}
+
+.file-uploaded-body-span{
+	background-color: var(--color-gray-back);
+}

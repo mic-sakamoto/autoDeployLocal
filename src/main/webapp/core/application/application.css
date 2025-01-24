@@ -1,0 +1,207 @@
+/*ログイン手順再送信modal*/
+.resend-modal .modal-body {
+	width: 100%;
+	max-width: 810;
+}
+
+/* 隣接セレクタでスタイル適用 */
+#req-tab.active+.container {
+	margin-top: 80px;
+}
+
+#req-tab:not(.active)+.container {
+	margin-top: 0;
+}
+
+/*進捗バー*/
+.custom-progressbar .progressbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+	position: relative;
+}
+
+.custom-progressbar .progressbar li {
+	color: #6b7675;
+	counter-increment: steps;
+	font-size: .875rem;
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 33.333%;
+}
+
+.custom-progressbar .progressbar li:first-child:after {
+	content: none;
+}
+
+.custom-progressbar .progressbar li:before {
+	background-color: #6b7675;
+	border-radius: 50%;
+	content: "";
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	margin: 7px auto;
+	text-align: center;
+	width: 24px;
+}
+
+.custom-progressbar .progressbar li:after {
+	background-color: #6b7675;
+	content: "";
+	height: 2px;
+	left: -50%;
+	position: absolute;
+	top: 20px;
+	width: 100%;
+	z-index: -1;
+}
+
+.custom-progressbar .progressbar li.complete:after,
+.custom-progressbar .progressbar li.complete:before {
+	background-color: #0084b4;
+}
+
+.custom-progressbar .progressbar li.active:before {
+	background-color: #0084b4;
+	height: 30px;
+	outline: 3px solid var(--color-white);
+	outline-offset: -7px;
+	width: 30px;
+}
+
+.custom-progressbar .progressbar li.active:after {
+	background-color: #0084b4;
+}
+
+/*必須項目タブ*/
+#req-tab {
+	position: fixed;
+	border-bottom: 2px solid var(--color-gray-line);
+	display: none;
+	color: var(--color-string);
+	background-color: var(--color-white);
+	max-height: 80px;
+	width: 100%;
+	z-index: 1000;
+
+}
+
+#req-tab.active {
+	display: flex;
+}
+
+#req-tab-contents {
+	display: flex;
+	gap: 1rem;
+	margin: auto;
+	align-items: center;
+	padding: 1rem 1.5rem;
+	max-width: 1000px;
+	width: 100%;
+}
+
+#close-btn-area {
+	display: flex;
+	gap: .5rem;
+}
+
+#close-btn-area button {
+	min-width: 5rem;
+}
+
+#close-tab {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+#required-items-area {
+	display: flex;
+	align-items: center;
+	background-color: #fff8e3;
+	border: 1px solid #fca529;
+	border-radius: 4px;
+	padding: .625rem 1.25rem;
+	min-width: 180px;
+}
+
+#remaining-items {
+	font-weight: bold;
+	color: var(--color-red);
+}
+
+#func-btn-area {
+	display: flex;
+	gap: .5rem;
+	margin-left: auto;
+}
+
+#func-btn-area button {
+	min-width: 10rem;
+	font-size: clamp(0.2rem, 1.0vw, 1rem);
+}
+
+/*入力確認ページで入力項目の白枠ださないように*/
+#form-input:has(.input-form.active) {
+	display: block;
+}
+
+#form-input:has(.input-form) {
+	display: none;
+}
+
+
+.btn-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1.5rem;
+}
+
+.btn-container button {
+	min-width: 7.5rem;
+}
+
+.back-btn {
+	margin-right: auto;
+}
+
+.next-btn {
+	margin-left: auto;
+}
+
+.input-form {
+	display: none;
+}
+
+.input-form.active {
+	display: flex;
+	flex-direction: column;
+	gap: 1.3rem;
+}
+
+.p-10 {
+	padding: 10px;
+}
+
+.mccs-car-info-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1.875rem;
+}
+
+.input-form button {
+	min-width: 7.5rem;
+}
+
+.req-icon {
+	color: var(--color-red);
+}
+
+.required,
+label:has(.required) {
+	background-color: #FBE2D5 !important;
+}

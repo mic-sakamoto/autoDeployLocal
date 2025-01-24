@@ -1,0 +1,61 @@
+.list-card {
+    cursor: pointer;
+}
+
+.list-userName {
+	color: var(--customer-color);
+	font-weight: bold;
+}
+.list-storeName {
+	color: var(--store-color);
+	font-weight: bold;
+}
+
+.user-id {
+	margin-left: 5px;
+	background-color:var(--customer-light-color);
+	padding: 0 2;
+	color: white;
+	line-height: 17px;
+}
+.store-id {
+	margin-left: 5px;
+	background-color: var(--store-light-color);
+	padding: 0 2;
+	color: white;
+	line-height: 17px;
+}
+.list-proxy-input {
+	margin-left: 5px;
+	background-color: var(--staff-light-color);
+	padding: 0 2;
+	color: white;
+	line-height: 17px;
+}
+
+.web-id {
+	margin-left: 10px;
+}
+
+.status-color-lb {
+	background-color: var(--color-light-blue);
+}
+.status-color-b {
+	background-color: var(--color-blue);
+}
+.status-color-g {
+	background-color: var(--color-green);
+}
+.status-color-y {
+	background-color: var(--color-yellow);
+}
+.status-color-r {
+	background-color: var(--color-red);
+}
+
+.list-pen-icon {
+	margin: 0 5px;;
+	width: 17px;
+	height: 17px;
+	fill: black;
+}

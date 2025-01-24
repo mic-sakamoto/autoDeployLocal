@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="autoLoneMoushikomi" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="800" leftMargin="42" rightMargin="0" topMargin="25" bottomMargin="0" uuid="6d5fe8d6-8f29-4832-90e6-972938f5d983">
+	<property name="ireport.zoom" value="1.3166562715304135"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="style1">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{tatekaekin}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style2">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kameitentesuryo}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style3">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{fuzumihoshokin}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style4">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kojokomokuichi}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style5">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kojokomokuni}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style6">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kojokomokusan}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style7">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kojokomokushi}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style8">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kojokomokugo}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style9">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{kyanserutatekaekin}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<style name="style10">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[(Double.parseDouble($F{sashihikishiharaikin}.replace(",", "")) < 0) ? Boolean.TRUE : Boolean.FALSE]]></conditionExpression>
+			<style forecolor="#FF0000"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="ShiharaiTsuchisho" class="java.io.InputStream"/>
+	<field name="shutsuryokunen" class="java.lang.String"/>
+	<field name="shutsuryokuzuki" class="java.lang.String"/>
+	<field name="shutsuryokubi" class="java.lang.String"/>
+	<field name="yubimbango" class="java.lang.String"/>
+	<field name="jusho" class="java.lang.String"/>
+	<field name="kaishamei" class="java.lang.String"/>
+	<field name="shiharaikodo" class="java.lang.String"/>
+	<field name="shiharaishimekirinen" class="java.lang.String"/>
+	<field name="shiharaishimekirizuki" class="java.lang.String"/>
+	<field name="shiharaishimekiribi" class="java.lang.String"/>
+	<field name="shiharaiyoteinen" class="java.lang.String"/>
+	<field name="shiharaiyoteizuki" class="java.lang.String"/>
+	<field name="shiharaiyoteibi" class="java.lang.String"/>
+	<field name="ginkomei" class="java.lang.String"/>
+	<field name="shitemmei" class="java.lang.String"/>
+	<field name="koza" class="java.lang.String"/>
+	<field name="kozameigi" class="java.lang.String"/>
+	<field name="kensu" class="java.lang.String"/>
+	<field name="tatekaekin" class="java.lang.String"/>
+	<field name="kameitentesuryo" class="java.lang.String"/>
+	<field name="fuzumihoshokin" class="java.lang.String"/>
+	<field name="kojokomokuichi" class="java.lang.String"/>
+	<field name="kojokomokuni" class="java.lang.String"/>
+	<field name="kojokomokusan" class="java.lang.String"/>
+	<field name="kojokomokushi" class="java.lang.String"/>
+	<field name="kojokomokugo" class="java.lang.String"/>
+	<field name="kyanserutatekaekin" class="java.lang.String"/>
+	<field name="sashihikishiharaikin" class="java.lang.String"/>
+	<field name="biko" class="java.lang.String"/>
+	<title>
+		<band height="535" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="802" height="535" uuid="21059d00-2236-412d-9cb7-d5dafe16c86d"/>
+				<box topPadding="0" leftPadding="0"/>
+				<imageExpression><![CDATA[$P{ShiharaiTsuchisho}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="587" y="33" width="40" height="20" uuid="8e33eda5-fbee-4631-aca2-eccdaa5d108b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shutsuryokunen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="644" y="33" width="25" height="20" uuid="632ef257-49f3-4e70-9e1c-30c23daf5017"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shutsuryokuzuki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="684" y="33" width="25" height="20" uuid="622d213e-0680-43a1-a969-095afc8c4855"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shutsuryokubi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="36" y="39" width="121" height="20" uuid="547a65c3-0d75-4a7e-9b33-351217860b82"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yubimbango}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="59" width="213" height="20" uuid="3c40c7b4-1175-4290-a82f-6d66b71cf419"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jusho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="79" width="213" height="20" uuid="d0e772e1-b8fe-4505-8714-3973fdebecdc"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kaishamei}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="429" y="69" width="290" height="74" uuid="870f81c9-4a95-43cd-9702-8e1ba5872f5f"/>
+				<textElement>
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[株式会社　USSサポートサービス
+
+〒　1010047
+東京都千代田区神田２丁目１２番６号]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="159" y="223" width="124" height="14" uuid="b14e512d-fddf-4674-b802-99dca139a7b5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaikodo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="233" width="28" height="14" uuid="9aec0cba-21ef-4aca-9a7f-cb071f64b79a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaishimekirinen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="233" width="28" height="14" uuid="616e5e9c-8005-4232-9a88-195aeca7f96c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaishimekirizuki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="233" width="28" height="14" uuid="4f3a2c38-e53f-4da5-a917-1c6528779ecc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaishimekiribi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="243" width="28" height="14" uuid="08a436ba-06be-4f97-9523-bf1cc8c33243"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaiyoteinen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="196" y="243" width="28" height="14" uuid="25a4b34b-f0aa-4e8d-a552-ff443b34477c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaiyoteizuki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="243" width="28" height="14" uuid="8adf0fef-79cb-4bf9-9182-c54104c37b1b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shiharaiyoteibi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="222" width="116" height="14" uuid="f94184e6-1c2c-4346-a567-f8cc8f3d8989"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ginkomei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="233" width="116" height="14" uuid="97d647cf-1b24-4755-8389-05ce85f8068b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shitemmei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="244" width="116" height="14" uuid="c9e2284b-49f8-414d-8a46-22c3c69017aa"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{koza}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="255" width="116" height="14" uuid="f9960162-90ee-4111-b25f-4c4fe0dd082f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kozameigi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="314" width="26" height="15" uuid="2d38f0e7-1eaa-42c7-9186-5d103033e682"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kensu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style1" x="101" y="314" width="56" height="15" uuid="f2aba5fd-9a45-485c-87cf-882b43839af1"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tatekaekin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style2" x="162" y="314" width="55" height="15" uuid="655e009e-912f-4028-81cb-88ea71804c95"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kameitentesuryo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style3" x="220" y="314" width="56" height="15" uuid="c761fb8e-ff67-486d-8bbf-1d2edbafddbc"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fuzumihoshokin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style4" x="278" y="314" width="58" height="15" uuid="af3ed112-70bc-400b-94a2-3d8358727f2b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kojokomokuichi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style5" x="338" y="314" width="56" height="15" uuid="526d7757-1b5a-4745-8212-929de7b352cf"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kojokomokuni}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style6" x="398" y="314" width="55" height="15" uuid="6863e275-81da-49a2-a955-e55f51fa62dd"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kojokomokusan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style7" x="457" y="314" width="56" height="15" uuid="745f8fe4-08b0-4f63-9427-529ae8992726"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kojokomokushi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style8" x="516" y="314" width="55" height="15" uuid="96d54769-cdd7-47af-b933-cb45aa3fa375"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kojokomokugo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style9" x="575" y="314" width="55" height="15" uuid="8d0faf9e-4e09-46e1-98fd-b21938e4abd0"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kyanserutatekaekin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="style10" x="634" y="314" width="57" height="15" uuid="3abb7943-ea77-433b-9b10-bb5822eb1603"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sashihikishiharaikin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="52" y="373" width="641" height="89" uuid="4671d652-867d-4d7d-9f0e-ca9f7483b1ea"/>
+				<textElement>
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{biko}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

@@ -1,0 +1,317 @@
+.list-senderInfo,
+.list-addressInfo {
+	display: contents;
+}
+
+.customer-senderUserName,
+.customer-addressUserName {
+	color: var(--customer-color);
+	font-weight: bold;
+}
+
+.customer-user-id {
+	margin-left: 5px;
+	background-color: var(--customer-light-color);
+	padding: 0 5;
+	color: white;
+	line-height: 17px;
+}
+
+.store-senderUserName,
+.store-addressUserName {
+	color: var(--store-color);
+	font-weight: bold;
+}
+
+.store-user-id {
+	margin-left: 5px;
+	background-color: var(--store-light-color);
+	padding: 0 5;
+	color: white;
+	line-height: 17px;
+}
+
+.staff-senderUserName,
+.staff-addressUserName {
+	color: var(--staff-color);
+	font-weight: bold;
+}
+
+.staff-name {
+	margin-left: 5px;
+	color: var(--staff-color);
+	font-weight: bold;
+	line-height: 17px;
+}
+
+.status {
+	padding: 0 8px;
+}
+
+.list-newIcon {
+	margin-left: 5px;
+	background-color: var(--staff-color);
+	padding: 0 5;
+	color: white;
+	display: block;
+	line-height: 20px;
+}
+
+.list-card {
+	cursor: pointer;
+}
+
+.modal-btn button {
+	min-width: 6rem;
+}
+
+.modal-body {
+	width: 100%;
+	max-width: 880px;
+}
+
+.regist-note {
+	margin: 0 1.5rem;
+	padding: 7px;
+	border: 1px solid var(--color-gray-line);
+}
+
+.contents-body-area {
+	margin: 1.5rem 1.5rem 0;
+}
+
+.modal-InquireInfo,
+.modal-AnswerInfo {
+	display: flex;
+}
+
+.modal-InquireBody,
+.modal-AnswerBody {
+	padding: 7px;
+	border: 1px solid var(--color-gray-line);
+}
+
+.inquiryXmark1,
+.inquiryXmark2,
+.staffInquiryXmark1,
+.staffInquiryXmark2 {
+	cursor: pointer;
+}
+
+.model-InquireFile,
+.model-AnswerFile {
+	display: flex;
+	margin-top: 0.2rem;
+}
+
+.file-icon {
+	display: flex;
+	align-items: center;
+}
+
+.tmpFile-svg {
+	width: 24px !important;
+	height: 24px !important;
+}
+
+.model-InquireFile1,
+.model-InquireFile2,
+.model-AnswerFile1,
+.model-AnswerFile2 {
+	display: flex;
+	margin-right: 0.2rem;
+	padding: 7px;
+	border: 1px solid var(--color-gray-line);
+	background-color: var(--color-yellow);
+}
+
+.store-id-set {
+	display: flex;
+	margin-bottom: 0.1rem;
+}
+
+.customer-id-set {
+	display: flex;
+	margin-top: auto;
+}
+
+.id-set-btn {
+	gap: 6px;
+	height: 22px;
+	text-align: center;
+	font-size: 1.0rem;
+	transition: background-color 0.5s ease;
+	border: none;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+#storeInfo,
+#customerInfo {
+	margin-left: 0.5rem;
+}
+
+.inquireAttachedFileDisplay,
+.answersAttachedFileDisplay {
+	margin-top: 1rem;
+}
+
+.agreement-area {
+	display: flex;
+	align-items: center;
+}
+
+.agreementCheckbox {
+	margin-left: 1rem;
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 0.25rem 1.5rem 0.25rem 1rem;
+	background-color: var(--color-gray-back);
+	cursor: pointer;
+}
+
+.agreementCheckbox.active {
+	margin-left: 1rem;
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 0.25rem 1.5rem 0.25rem 1rem;
+	background-color: var(--color-blue);
+	color: var(--color-white);
+	cursor: pointer;
+}
+
+.agreementCheckbox.disabled {
+	margin-left: 1rem;
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 0.25rem 1.5rem 0.25rem 1rem;
+	background-color: var(--color-gray-back);
+	cursor: default;
+}
+
+.agreementCheckbox.disabled.active {
+	margin-left: 1rem;
+	border: solid 1px;
+	border-radius: 4px;
+	padding: 0.25rem 1.5rem 0.25rem 1rem;
+	background-color: var(--color-blue);
+	color: var(--color-white);
+	cursor: default;
+}
+
+#agreemented-area {
+	margin-bottom: 1.5rem;
+}
+
+@media (min-width: 769px) {
+	.list-status {
+		width: 12.0rem !important;
+	}
+
+	.input-answerInfo {
+		display: grid;
+		grid-template-columns: 2fr 1fr 0.7fr 4fr;
+		align-items: end;
+		width: 100% !important;
+	}
+
+	.agreementBodyKbn {
+		width: 50%;
+	}
+
+	.tmpBtn {
+		width: 20%
+	}
+
+	.input-answererId {
+		margin-right: 1rem;
+	}
+
+	.search-answererId {
+		margin-right: 0.2rem;
+	}
+
+	.answererId {
+		width: 100%;
+		min-width: 9.375rem;
+		border-radius: 4px !important;
+	}
+
+	.searchAnswererId {
+		width: 100%;
+		min-width: 12.5rem;
+		border-radius: 4px !important;
+	}
+
+	.id-set-btn {
+		margin-left: 0.8rem;
+	}
+
+	.id-search-btn {
+		width: 6.25rem !important;
+		margin-left: 0.75rem;
+	}
+
+	.id-search-btn,
+	.searchAnswererId,
+	.answererId {
+		margin-bottom: 0.1875rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.list-status {
+		width: 16.0rem !important;
+	}
+
+	.input-answerInfo {
+		width: 100% !important;
+	}
+	
+	.modal-container {
+		top: 4% !important;
+		height: auto !important;
+	}
+
+	.agreementBodyKbn {
+		width: auto;
+	}
+
+	.input-answererId {
+		margin-right: 0;
+	}
+
+	.search-answererId {
+		margin-right: 0;
+	}
+
+	.contents-area {
+		padding: 0.25rem;
+	}
+
+	.input-item {
+		gap: 0;
+	}
+
+	.item-block {
+		gap: 0;
+	}
+	
+	.id-search-btn {
+		width: 3.125rem !important;
+		margin-top: 0.75rem;
+	}
+
+	.btn-container button {
+		min-width: 9rem;
+	}
+
+	.input-item,
+	.store-id-set,
+	.input-answererId,
+	.search-answererId {
+		margin-top: 0.75rem;
+	}
+
+}

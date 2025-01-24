@@ -1,0 +1,69 @@
+.accordion-open-body-block .input-searchable {
+	display: flex;
+	width: auto;
+}
+
+.accordion-open-body-block .input-searchable .btn {
+	width: 100px;
+}
+
+.accordion-open-body-block input {
+	width: 250px;
+}
+
+.accordion-open-body-block .radio-container {
+	display: flex
+}
+
+.accordion-open-body-block .radio-container label {
+	width: 250px;
+}
+
+
+
+
+.list-storeName {
+	color: var(--store-color);
+	font-weight: bold;
+}
+
+.store-id {
+	margin-left: 5px;
+	background-color: var(--store-light-color);
+	padding: 0 5;
+	color: white;
+	line-height: 17px;
+}
+
+.list-body-button-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.list-body-button-row .list-login {
+	display: inline-grid;
+}
+
+.list-store-info {
+	flex-direction: column;
+}
+
+.list-item-block-row {
+	display: flex;
+	align-items: center;
+	margin-right: auto;
+}
+
+.list-btn {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.list-btn button {
+	font-size: 0.8rem !important;
+	height: 50px;
+	padding: 5px;
+}

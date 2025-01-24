@@ -1,0 +1,107 @@
+.radio-container-2{
+	grid-template-columns: 1fr 1fr !important;
+}
+
+.mail-container,
+.sms-container {
+	display: flex !important;
+	gap: 1.875rem !important;
+	margin-top: 0.5rem;
+}
+
+.mail-radio-block,
+.sms-radio-block{
+	width: 30% !important;
+	display: block !important;
+}
+
+.mail-input-block,
+.sms-input-block{
+	width: 66%;
+}
+.mail-input{
+	width: 100%;
+}
+
+.sms-input {
+	width: 95%;
+	gap: .4375rem;
+	display: grid;
+	grid-template-columns: 30% 5% 30% 5% 30%;
+}
+
+/**エラーコンテント*/
+.errorMsgContainer {
+	display: flex;
+	margin: 0 auto;
+}
+
+.errorMsgContent {
+	background: lightgray;
+	padding: 20px 30px;
+	width: 100%;
+	margin: 1.5rem auto;
+}
+
+.btn-container{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.text-red{
+	color: #b51a1c;
+}
+
+.note-area{
+	border: 1px solid var(--color-gray-line);
+}
+
+.select-input-item{
+	gap: 0.05rem !important;
+}
+
+.radio-container,
+.input-name,
+#next-btn-div {
+    padding-top: 0.75rem;
+}
+
+.modal-selectinput:before {
+	display: none !important;
+}
+
+.modal-selectinput {
+	padding: 100px 20px !important;
+}
+
+@media (max-width: 1400px) {
+	#top_div {
+		width: 100%;
+	    margin: auto;
+	}		
+	#menu_div {
+	    width: 100%;
+	    height: 400px;
+	    color: white;
+	    background-color: black;
+	    display: flex;
+	    padding: 5 10 5 10;
+	}
+	.sub-menu-title {
+	    padding-left: 20px;
+	    line-height: 30px;
+	    cursor: pointer;
+	}
+	.menu-block, .menu-block-m {
+	    height: 167px;
+	    padding: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.select-input-method-modal {
+	    display: flex; 
+	}
+
+}

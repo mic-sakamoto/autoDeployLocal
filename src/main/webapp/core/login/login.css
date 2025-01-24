@@ -1,0 +1,103 @@
+/*Override*/
+main{
+	padding-top: 0 !important;
+}
+
+.logo-div {
+	display: flex;
+	justify-content: center;
+}
+
+#store-tab,
+#cutomer-tab {
+	border-radius: 0 0 10px 10px;
+}
+
+/**タブコンテント*/
+.passwordField {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.passwordToggle {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.password-icon {
+	margin: auto;
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: var(--color-string);
+}
+
+.input-login-password {
+	padding-right: 40px;
+	box-sizing: border-box;
+}
+
+.forgotPassword {}
+
+.forgotPassword:hover {}
+
+.buttonArea {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.loginButton {
+	width: 100%;
+}
+
+.privacyPolicy {
+	margin: 0 auto;
+}
+
+/**エラーコンテント*/
+	.errorMsgContainer {
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.errorMsgContent {
+		color: var(--color-white);
+		background: gray;
+		padding: 10px 20px;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	.errorMsgTitle {
+		font-size: 16px;
+		margin-left: 5px;
+	}
+
+	/*PC専用*/
+	@media (min-width: 769px) {
+		.logo {
+			width: 30rem;
+		}
+
+		.logo-div {
+			padding: 25px 0;
+		}
+	}
+
+	/*スマホ専用*/
+	@media (max-width: 768px) {
+		.logo {
+			width: 100%;
+		}
+
+		.logo-div {
+			padding: 1rem 0;
+		}
+	}

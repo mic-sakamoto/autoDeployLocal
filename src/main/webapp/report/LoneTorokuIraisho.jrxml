@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LoneTorokuIraisho" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="9c6328a5-f22d-41f8-821c-f6c4874cd38f">
+	<property name="ireport.zoom" value="1.5421731577181266"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="LoneTorokuIraisho" class="java.io.InputStream"/>
+	<field name="kameitemmei" class="java.lang.String"/>
+	<field name="hakkonen" class="java.lang.String"/>
+	<field name="hakkozuki" class="java.lang.String"/>
+	<field name="hakkobi" class="java.lang.String"/>
+	<field name="saikembango" class="java.lang.String"/>
+	<field name="keiyakushokana" class="java.lang.String"/>
+	<field name="keiyakushokanji" class="java.lang.String"/>
+	<field name="shamei" class="java.lang.String"/>
+	<title>
+		<band height="802" splitType="Stretch">
+			<image isUsingCache="true">
+				<reportElement x="0" y="0" width="555" height="802" uuid="f726ab3e-216c-4e7b-adef-6a80c3432a89"/>
+				<imageExpression><![CDATA[$P{LoneTorokuIraisho}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="49" y="79" width="158" height="20" uuid="ca396fa9-38e8-43cd-a893-86a032a25016"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kameitemmei}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="407" y="59" width="27" height="19" uuid="d79995a1-2c91-45f7-b9a4-fa1df9c26048"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hakkonen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="446" y="59" width="12" height="19" uuid="c1478f67-973c-44cb-83e3-29202b2c6b88"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hakkozuki}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="59" width="12" height="19" uuid="d38382f6-fb1f-4b74-be66-8d1b0175c53b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hakkobi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="327" width="184" height="20" uuid="c8aac4dd-6582-4e78-b764-fd6ee7257cb5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saikembango}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="347" width="184" height="13" uuid="0dfc3db3-3e62-49e4-ac45-93e81634eed4"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="游明朝" size="8" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keiyakushokana}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="360" width="184" height="24" uuid="9a35b592-2897-4f02-b4c6-508f72b9da0f"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{keiyakushokanji}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="327" width="122" height="23" uuid="dd74df8e-4fab-423d-b474-f3cdd69c7d06"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="游明朝" size="12" pdfFontName="HeiseiKakuGo-W5" pdfEncoding="UniJIS-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{shamei}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>
