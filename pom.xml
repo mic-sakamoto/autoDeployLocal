@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>com.opensymphony</groupId>
 			<artifactId>xwork-core</artifactId>
-			<version>2.3.35</version>  <!-- 最新バージョンを使用 -->
+			<version>2.3.16</version>  <!-- 最新バージョンを使用 -->
 		</dependency>
 	</dependencies>
 
