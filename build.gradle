@@ -20,7 +20,7 @@ defaultTasks 'clean',  'build'. 'war'
 
 war {
     archiveFileName = 'myapp.war'  // 出力ファイル名
-    destinationDirectory = file('target/myapp.war')
+    destinationDirectory = file('C:/')
 }
 
 tasks.register('cleanWar', Delete) {
