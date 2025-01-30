@@ -6,7 +6,6 @@
  * user guide available at https://docs.gradle.org/3.5/userguide/java_library_plugin.html
  */
 
-
 // Apply the java-library plugin to add support for Java Library
 apply plugin: 'java-library'
 apply plugin: 'war'
@@ -17,17 +16,15 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-defaultTasks 'clean',  'build'.'war'
+defaultTasks 'clean',  'build'. 'war'
 
-// WAR ファイルの出力先を `C:\` に設定
 war {
     archiveFileName = 'myapp.war'  // 出力ファイル名
-    destinationDirectory = file('C:/')  // Cドライブ直下に配置
+    destinationDirectory = file('target/myapp.war')
 }
 
-// Gradle クリーン時に `C:\myapp.war` を削除
 tasks.register('cleanWar', Delete) {
-    delete file('C:/myapp.war')
+    delete file('target/myapp.war')
 }
 clean.dependsOn cleanWar
 
