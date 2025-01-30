@@ -16,7 +16,19 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-defaultTasks 'clean',  'build'
+defaultTasks 'clean',  'build'.'war'
+
+// WAR ファイルの出力先を `C:\` に設定
+war {
+    archiveFileName = 'myapp.war'  // 出力ファイル名
+    destinationDirectory = file('C:/')  // Cドライブ直下に配置
+}
+
+// Gradle クリーン時に `C:\myapp.war` を削除
+tasks.register('cleanWar', Delete) {
+    delete file('C:/myapp.war')
+}
+clean.dependsOn cleanWar
 
 // ***************************************************************
 // Struts2の場合はこのバージョンを変更して、
@@ -96,7 +108,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-tiles-plugin
 	implementation group: 'org.apache.struts', name: 'struts2-tiles-plugin', version: struts2Ver
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-core
-	implementation group: 'org.apache.struts', name: 'struts2-core', version: struts2Ver
+	implementation group: 'org.apache.struts', name: 'struts2-core', version: '6.6.0'
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-json-plugin
 	implementation group: 'org.apache.struts', name: 'struts2-json-plugin', version: struts2Ver
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-jasperreports-plugin

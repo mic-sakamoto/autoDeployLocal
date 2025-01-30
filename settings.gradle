@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'uss-ss-al-web'
+rootProject.name = 'TestProject'
