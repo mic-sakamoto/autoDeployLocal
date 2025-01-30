@@ -17,9 +17,10 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-defaultTasks 'clean',  'build'. 'war'
+defaultTasks 'clean',  'build', 'war'
 
 war {
+	archiveBaseName = 'myapp'
     archiveFileName = 'myapp.war'  // 出力ファイル名
     destinationDirectory = file('C:/')
 }
@@ -35,7 +36,8 @@ clean.dependsOn cleanWar
 // ***************************************************************
 
 //def struts2Ver='2.5.30'
-def struts2Ver='6.6.0'
+//def struts2Ver='6.6.0'
+def struts2Ver='2.5.33'
 
 def defaultEncoding = 'UTF-8'
 
@@ -107,7 +109,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-tiles-plugin
 	implementation group: 'org.apache.struts', name: 'struts2-tiles-plugin', version: struts2Ver
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-core
-	implementation group: 'org.apache.struts', name: 'struts2-core', version: '6.6.0'
+	implementation group: 'org.apache.struts', name: 'struts2-core', version: struts2Ver
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-json-plugin
 	implementation group: 'org.apache.struts', name: 'struts2-json-plugin', version: struts2Ver
 	// https://mvnrepository.com/artifact/org.apache.struts/struts2-jasperreports-plugin
@@ -185,26 +187,26 @@ processResources{
 
 		if ( env == 'release' ) {
 			orgFile = releasePropFile
-			war.baseName = war.baseName
+			//war.baseName = war.baseName
 
 
 		} else if ( env == 'staging' ) {
 			orgFile = stagingPropFile
-			war.baseName = war.baseName
+			//war.baseName = war.baseName
 
 		} else if ( env == 'devMic' ) {
 			orgFile = devMicPropFile
 
-			war.baseName = war.baseName
+			//war.baseName = war.baseName
 
 		} else {
 
-			war.baseName = war.baseName
+			//war.baseName = war.baseName
 		}
 
 	} else {
 		//envの指定がない場合は、localとする
-		war.baseName = war.baseName
+		//war.baseName = war.baseName
 	}
 
 	println orgFile
