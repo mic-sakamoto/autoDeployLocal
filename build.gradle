@@ -41,7 +41,6 @@ def struts2Ver='2.5.33'
 
 def defaultEncoding = 'UTF-8'
 
-
 def _rootDir = "$rootDir"
 def _propDir = '/src/main/resources/'
 //propertyの絶対パス
