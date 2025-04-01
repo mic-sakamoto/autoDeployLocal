@@ -20,10 +20,11 @@ tasks.withType(JavaCompile) {
 defaultTasks 'clean',  'build', 'war'
 
 war {
-	archiveBaseName = 'myapp'
-    archiveFileName = 'myapp.war'  // 出力ファイル名
-    destinationDirectory = file('C:/')
+    archiveBaseName = 'myapp'
+    archiveFileName = 'myapp.war'
+    // destinationDirectory の指定は削除（デフォルトの build/libs/ に出力）
 }
+
 
 tasks.register('cleanWar', Delete) {
     delete file('target/myapp.war')
