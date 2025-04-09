@@ -1,13 +1,2 @@
-arguments=-Porg.gradle.java.installations.paths\=D\:/ProgramFiles/pleiades2024/2024-09/java/17
-auto.sync=false
-build.scans.enabled=false
-connection.gradle.distribution=GRADLE_DISTRIBUTION(VERSION(7.3))
 connection.project.dir=
 eclipse.preferences.version=1
-gradle.user.home=
-java.home=D\:/ProgramFiles/pleiades2024/2024-09/java/17
-jvm.arguments=
-offline.mode=false
-override.workspace.settings=true
-show.console.view=false
-show.executions.view=false
